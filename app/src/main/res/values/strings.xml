@@ -8,4 +8,19 @@
     <string name="ui_tabname_snack">snack</string>
     <string name="ui_tabname_dessert">Dessert</string>
 
+    <!-- APPETIZER OPTIONS -->
+    <string name="salad">Salad</string>
+    <string name="soup">Soup</string>
+    <string name="fruit">Fruit</string>
+
+    <!-- ENTREE OPTIONS -->
+    <string name="steak">Steak</string>
+    <string name="pasta">Pasta</string>
+    <string name="hamburger">Hamburger</string>
+
+    <!-- DESSERT OPTIONS -->
+    <string name="cake">Cake</string>
+    <string name="pie">Pie</string>
+    <string name="icecream">Ice Cream</string>
+
 </resources>
