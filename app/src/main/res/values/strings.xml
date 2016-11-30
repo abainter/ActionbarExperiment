@@ -3,9 +3,9 @@
     <string name="action_settings">Settings</string>
 
     <!-- ACTIONBAR TAB STRINGS -->
-    <string name="ui_tabname_breakfast">breakfast</string>
-    <string name="ui_tabname_lunch">lunch</string>
+    <string name="ui_tabname_appetizer">Appetizer</string>
+    <string name="ui_tabname_entree">Entree</string>
     <string name="ui_tabname_snack">snack</string>
-    <string name="ui_tabname_dinner">dinner</string>
+    <string name="ui_tabname_dessert">Dessert</string>
 
 </resources>
