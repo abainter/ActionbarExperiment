@@ -2,9 +2,12 @@ package com.cornez.actionbarexperiment;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -88,6 +91,29 @@ public class MyActivity extends Activity {
             int id = item.getItemId();
             if (id == R.id.action_settings) {
                 return true;
+            } else if (id == R.id.checkout){
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                alert.setTitle("Checkout");
+
+                SharedPreferences sharedPreferences = getSharedPreferences("SHARED_PREFERENCES", MODE_PRIVATE);
+                int appetizerPrice = sharedPreferences.getInt("APPETIZER_PRICE",0);
+                int entreePrice = sharedPreferences.getInt("DESSERT_PRICE",0);
+                int dessertPrice = sharedPreferences.getInt("ENTREE_PRICE",0);
+                int sum = appetizerPrice + entreePrice + dessertPrice;
+
+                alert.setMessage("Your total is: $"+sum);
+
+                // set dialog message
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+
+                // create alert dialog
+                AlertDialog alertDialog = alert.create();
+                // show it
+                alertDialog.show();
             }
             return super.onOptionsItemSelected(item);
         }

@@ -26,20 +26,22 @@ public class DessertFragment extends Fragment {
         dessertRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+                int price = 0;
                 switch(checkedId){
                     case R.id.cake:
-                        //do something
+                        price = 5;
                         break;
                     case R.id.pie:
-                        //do something
+                        price = 6;
                         break;
                     case R.id.icecream:
-                        //do something
+                        price = 4;
                         break;
                 }
                 RadioButton checkedRadioButton = (RadioButton) group.findViewById(checkedId);
                 int checkedIndex = group.indexOfChild(checkedRadioButton);
                 SavePreferences("DESSERT", checkedIndex);
+                SavePreferences("DESSERT_PRICE", price);
             }
         });
         loadPreferences();

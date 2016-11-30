@@ -5,4 +5,10 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+
+    <item android:id="@+id/checkout"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="@string/checkout"
+        android:showAsAction="always">
+    </item>
 </menu>

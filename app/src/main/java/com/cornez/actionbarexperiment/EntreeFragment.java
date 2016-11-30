@@ -26,20 +26,22 @@ public class EntreeFragment extends Fragment {
         entreeRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+                int price = 0;
                 switch(checkedId){
                     case R.id.steak:
-                        //do something
+                        price = 16;
                         break;
                     case R.id.pasta:
-                        //do something
+                        price = 11;
                         break;
                     case R.id.hamburger:
-                        //do something
+                        price = 8;
                         break;
                 }
                 RadioButton checkedRadioButton = (RadioButton) group.findViewById(checkedId);
                 int checkedIndex = group.indexOfChild(checkedRadioButton);
                 SavePreferences("ENTREE", checkedIndex);
+                SavePreferences("ENTREE_PRICE", price);
             }
         });
         loadPreferences();
