@@ -47,11 +47,10 @@ public class MyActivity extends Activity {
         actionBar.addTab(dessertTab);
 
         //RESTORE NAVIGATION
-        if(savedInstanceState != null){
-            actionBar.setSelectedNavigationItem(savedInstanceState.getInt(TAB_KEY_INDEX,0));
+        if (savedInstanceState != null) {
+            actionBar.setSelectedNavigationItem(savedInstanceState.getInt(TAB_KEY_INDEX, 0));
         }
     }
-
     class MyTabsListener implements ActionBar.TabListener {
         public Fragment fragment;
 

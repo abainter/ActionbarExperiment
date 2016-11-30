@@ -5,26 +5,27 @@
     android:layout_height="match_parent">
 <RadioGroup
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/dessertGroup">
     <RadioButton
         android:text="@string/cake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton"
+        android:id="@+id/cake"
         android:textColor="@android:color/white" />
 
     <RadioButton
         android:text="@string/pie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton2"
+        android:id="@+id/pie"
         android:textColor="@android:color/white" />
 
     <RadioButton
         android:text="@string/icecream"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton3"
+        android:id="@+id/icecream"
         android:textColor="@android:color/background_light" />
     </RadioGroup>
 

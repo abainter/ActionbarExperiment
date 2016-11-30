@@ -6,26 +6,27 @@
     android:background="@color/black">
 <RadioGroup
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/entreeGroup">
     <RadioButton
         android:text="@string/steak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton4"
+        android:id="@+id/steak"
         android:textColor="@android:color/white" />
 
     <RadioButton
         android:text="@string/pasta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton8"
+        android:id="@+id/pasta"
         android:textColor="@android:color/white" />
 
     <RadioButton
         android:text="@string/hamburger"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton9"
+        android:id="@+id/hamburger"
         android:textColor="@android:color/white" />
 
     <ImageView
